@@ -3,19 +3,29 @@ import 'package:flutter/material.dart';
 void main() {
   // 建立appTitle和hiFlutter物件
   var appTitle = Text('我的第一個Flutter App'),
-      hiFlutter = Text("Hi, Flutter.",
-        style: TextStyle(fontSize: 50),
-      );
-
+      hiFlutter = Text("Hi, Flutter. \n"
+          "今天是20220926.",
+        style: TextStyle(fontSize: 29),
+  );
+  //var img = Image.network("https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg");
   // 建立appBody物件
-  var appBody = Center(
+  var appBody = Align(
+    alignment: Alignment.topRight,
     child: hiFlutter,
   );
+  /*Center(
+      Container(
+      margin: const EdgeInsets.all(10.0),
+      color: Colors.red,
+      width: 100.0,
+      height: 100.0,
+    )*/
+
 
   // 建立appBar物件
   var appBar = AppBar(
     title: appTitle,
-    backgroundColor: Color(0xff0000ff),
+    backgroundColor: Color(0xff9BC995),
   );
 
   // 建立app物件
@@ -23,7 +33,7 @@ void main() {
     home: Scaffold(
         appBar: appBar,
         body: appBody,
-        backgroundColor: Colors.yellow
+        backgroundColor: Color(0xff98B9AB)
     ),
   );
 
